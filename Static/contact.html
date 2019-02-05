@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Me
+        </title>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Contact</h1>
+        <script type="text/javascript" src="">
+         //define variables
+            var name = "ionut"
+            let firstName = "mitu"
+            
+            //print the output to the console
+            console.log(name, firstName)
+            
+            //how to define a function
+            function add(a, b) {
+                console.log(a+b)
+            }
+            
+            //how to call a function
+            add(20, 30)
+            
+            //how to define a function that take a callback as param
+            function addWithCallback(a, b, callback) {
+                callback(a, b)
+            }
+            
+            //how to call a function with a callback
+            addWithCallback(10, 30, add)
+            
+            //define a callback at runtime
+            addWithCallback(100, 200, function(a, b) {
+                console.log(a*b)
+            })
+            
+            //same as above
+            //arrow functions
+            addWithCallback(100, 200, (a, b) => {
+                console.log(a*b)
+            })
+        </script>
+    </body>
+</html>
